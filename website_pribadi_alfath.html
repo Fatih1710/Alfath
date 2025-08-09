@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alfath Panatagana — Mahasiswa Hubungan Internasional</title>
+  <meta name="description" content="Alfath — Mahasiswa Hubungan Internasional UIN Jakarta. Minat: diplomasi, bahasa, ekowisata, dan filantropi. Prestasi: Juara 3 Nasional Olimpiade Bahasa Arab, Piagam Emas Olimpiade Bahasa Inggris." />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --navy:#0b2340; /* biru tua */
+      --gold:#c89b3a; /* emas */
+      --soft:#f7f9fb; /* latar */
+      --muted:#6b7280;
+      --glass: rgba(255,255,255,0.06);
+      --maxw:1100px;
+    }
+    *{box-sizing:border-box}
+    body{font-family: 'Lato', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; color:#0f1724; background:linear-gradient(180deg,#fbfdff 0%, #f7fbff 100%)}
+    a{color:var(--navy); text-decoration:none}
+
+    header{background:var(--soft); border-bottom:1px solid rgba(11,35,64,0.06); position:sticky; top:0; z-index:40}
+    .container{max-width:var(--maxw); margin:0 auto; padding:1rem}
+    .nav{display:flex; align-items:center; justify-content:space-between; gap:1rem}
+    .brand{display:flex; align-items:center; gap:.75rem}
+    .brand .logo{width:44px; height:44px; border-radius:10px; background:linear-gradient(135deg,var(--navy), #102a4b); display:flex; align-items:center; justify-content:center; color:white; font-weight:700}
+    nav ul{display:flex; gap:1rem; list-style:none; margin:0; padding:0}
+    nav li{font-weight:600}
+    .cta{background:var(--gold); padding:.45rem .9rem; border-radius:10px; color:white; font-weight:700}
+
+    /* hero */
+    .hero{padding:3.5rem 0; display:grid; grid-template-columns:1fr 380px; gap:2rem; align-items:center}
+    .hero-left h1{font-family:'Poppins',sans-serif; font-size:2.25rem; margin:0 0 .5rem; color:var(--navy)}
+    .tag{color:var(--muted); margin-bottom:1rem}
+    .badges{display:flex; gap:.5rem; flex-wrap:wrap; margin-top:.75rem}
+    .badge{background:var(--glass); border:1px solid rgba(11,35,64,0.06); padding:.4rem .6rem; border-radius:8px; font-weight:600}
+    .hero-right{background:white; border-radius:14px; padding:1rem; box-shadow:0 6px 20px rgba(11,35,64,0.06)}
+    .profile{display:flex; gap:1rem; align-items:center}
+    .profile .img{width:96px; height:96px; border-radius:12px; background:linear-gradient(135deg,#e6eefc,#dbeeff); display:flex; align-items:center; justify-content:center; font-weight:700; color:var(--navy)}
+    .quick{margin-top:.75rem; color:var(--muted); font-size:.95rem}
+
+    /* sections */
+    section{padding:2.25rem 0}
+    h2.section-title{font-family:'Poppins',sans-serif; margin:0 0 1rem; color:var(--navy)}
+    .grid-2{display:grid; grid-template-columns:1fr 1fr; gap:1.25rem}
+    .card{background:white; border-radius:12px; padding:1rem; box-shadow:0 6px 20px rgba(11,35,64,0.04)}
+
+    /* about */
+    .meta-list{display:flex; gap:1rem; flex-wrap:wrap; margin-top:.75rem}
+    .meta{background:linear-gradient(180deg,#fff,#fbfbff); padding:.6rem .75rem; border-radius:8px; border:1px solid rgba(11,35,64,0.04)}
+
+    /* portfolio */
+    .projects{display:grid; grid-template-columns:repeat(3,1fr); gap:1rem}
+    .project{padding:.9rem; border-radius:10px; border:1px solid rgba(11,35,64,0.04)}
+    .project h3{margin:0 0 .5rem}
+
+    /* blog list */
+    .posts{display:grid; gap:.75rem}
+    .post{display:flex; gap:.8rem; align-items:center}
+    .post .thumb{width:88px; height:60px; border-radius:8px; background:#eef4ff}
+
+    /* contact */
+    form{display:grid; gap:.6rem}
+    input, textarea{padding:.7rem; border-radius:8px; border:1px solid rgba(11,35,64,0.08); font-size:.95rem}
+    button[type=submit]{background:var(--navy); color:white; padding:.7rem; border-radius:10px; border:0; font-weight:700}
+
+    /* footer */
+    footer{padding:1.5rem 0; color:var(--muted); font-size:.95rem}
+
+    /* responsive */
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr;}
+      nav ul{display:none}
+    }
+    @media (max-width:640px){
+      .projects{grid-template-columns:repeat(1,1fr)}
+      .grid-2{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo">AP</div>
+        <div>
+          <div style="font-weight:700">Alfath Panatagana</div>
+          <div style="font-size:0.82rem;color:var(--muted)">Mahasiswa Hubungan Internasional — UIN Jakarta</div>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#portfolio">Portofolio</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+      </nav>
+      <a class="cta" href="#contact">Hubungi</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-left">
+        <h1>Halo — saya Alfath.<br><span style="color:var(--muted);font-weight:500">Menghubungkan Bahasa, Budaya, dan Diplomasi.</span></h1>
+        <p class="tag">Mahasiswa Hubungan Internasional di UIN Jakarta. Aktif di MUN, program filantropi, dan riset kecil tentang ekowisata berbasis masyarakat.</p>
+        <div class="badges">
+          <div class="badge">Juara 3 Nasional — Olimpiade Bahasa Arab</div>
+          <div class="badge">Piagam Emas — Olimpiade Bahasa Inggris</div>
+          <div class="badge">Beasiswa Santri BAZNAS</div>
+        </div>
+      </div>
+
+      <aside class="hero-right">
+        <div class="profile">
+          <div class="img">Foto</div>
+          <div>
+            <div style="font-weight:700">Alfath Panatagana</div>
+            <div style="font-size:.95rem;color:var(--muted)">Hubungan Internasional • Bahasa • Diplomasi • Filantropi</div>
+            <div class="quick">Sedang mempersiapkan seleksi PTLN Al-Azhar Mesir. Tertarik studi lanjutan di Al Akhawayn University — Maroko.</div>
+          </div>
+        </div>
+        <div style="margin-top:1rem; display:flex; gap:.5rem; justify-content:space-between">
+          <div style="font-size:.9rem;color:var(--muted)"><strong>Lokasi</strong><br>Depok, Indonesia</div>
+          <div style="font-size:.9rem;color:var(--muted)"><strong>Email</strong><br>alfath.email@example.com</div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="about">
+      <h2 class="section-title">Tentang Saya</h2>
+      <div class="grid-2">
+        <div class="card">
+          <p><strong>Ringkasan</strong><br>Saya Alfath, mahasiswa Hubungan Internasional di UIN Jakarta yang fokus pada diplomasi, bahasa, dan pembangunan berkelanjutan. Saya berpengalaman di kegiatan MUN, konten bahasa di Instagram, dan proyek filantropi pendidikan.</p>
+          <div class="meta-list">
+            <div class="meta">Pendidikan: UIN Jakarta — HI</div>
+            <div class="meta">Prestasi: Olimpiade Bahasa Arab & Inggris</div>
+            <div class="meta">Minat: Ekowisata, Kesehatan Publik, Diplomasi</div>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Skill & Tools</h3>
+          <ul style="margin:0 0 0 1rem">
+            <li>Bahasa: Bahasa Indonesia (native), Inggris (lanjut), Arab (lanjut)</li>
+            <li>Komunikasi publik, debat & MUN</li>
+            <li>Penulisan esai kebijakan dan blog perjalanan</li>
+          </ul>
+          <h3 style="margin-top:1rem">Rencana</h3>
+          <p style="margin:0">Mempersiapkan pendidikan lanjutan di luar negeri (Mesir/Maroko), dan mengembangkan proyek ekowisata berbasis masyarakat untuk filantropi lokal.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <h2 class="section-title">Portofolio & Kegiatan</h2>
+      <div class="projects">
+        <div class="project card">
+          <h3>MUN Delegasi — 2024</h3>
+          <p style="margin:0">Partisipasi aktif sebagai delegasi dalam konferensi Model United Nations dengan posisi Ketua Komite pada beberapa sesi.</p>
+        </div>
+        <div class="project card">
+          <h3>Konten Bahasa (Instagram)</h3>
+          <p style="margin:0">Membuat konten edukatif seputar Bahasa Arab dan tips belajar bahasa untuk pemula.</p>
+        </div>
+        <div class="project card">
+          <h3>Proyek Filantropi — Bimbingan Belajar</h3>
+          <p style="margin:0">Penerima & pengarah program beasiswa bimbingan belajar untuk persiapan UTBK melalui komunitas lokal.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="blog">
+      <h2 class="section-title">Blog & Artikel</h2>
+      <div class="card posts">
+        <div class="post">
+          <div class="thumb"></div>
+          <div>
+            <div style="font-weight:700">Diplomasi Pemuda: Peran Generasi Baru dalam Kebijakan Publik</div>
+            <div style="color:var(--muted); font-size:.95rem">Ringkasan singkat artikel tentang bagaimana pemuda dapat mendorong kebijakan kesehatan publik.</div>
+          </div>
+        </div>
+        <div class="post">
+          <div class="thumb"></div>
+          <div>
+            <div style="font-weight:700">Catatan Perjalanan: Belajar Budaya di Maroko</div>
+            <div style="color:var(--muted); font-size:.95rem">Catatan observasi & tips praktis untuk pelajar yang ingin studi di Maroko.</div>
+          </div>
+        </div>
+        <div style="text-align:center; margin-top:.7rem"><a href="#">Lihat semua artikel →</a></div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2 class="section-title">Kontak</h2>
+      <div class="grid-2">
+        <div class="card">
+          <p>Ingin bekerja sama, berdiskusi, atau sekadar menyapa? Isi formulir ini atau kirim email langsung.</p>
+          <form onsubmit="event.preventDefault(); alert('Terima kasih! Form sementara non-fungsional. Silakan hubungi lewat email.');">
+            <input type="text" placeholder="Nama" required />
+            <input type="email" placeholder="Email" required />
+            <textarea rows="5" placeholder="Pesan" required></textarea>
+            <button type="submit">Kirim Pesan</button>
+          </form>
+        </div>
+        <div class="card">
+          <h3>Informasi Kontak</h3>
+          <p style="margin:0">Email: <a href="mailto:alfath.email@example.com">alfath.email@example.com</a></p>
+          <p style="margin:0">Lokasi: Depok, Indonesia</p>
+          <h4 style="margin-top:1rem">Sosial</h4>
+          <p style="margin:0"><a href="#">Instagram</a> • <a href="#">LinkedIn</a> • <a href="#">X / Twitter</a></p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap">
+      <div>© <strong>Alfath Panatagana</strong> — Mahasiswa Hubungan Internasional</div>
+      <div style="color:var(--muted); font-size:.9rem">Didesain untuk personal brand: bahasa, diplomasi, dan filantropi.</div>
+    </div>
+  </footer>
+
+  <script>
+    // smooth scroll for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        const href = a.getAttribute('href');
+        if(href.length>1){
+          e.preventDefault();
+          document.querySelector(href).scrollIntoView({behavior:'smooth', block:'start'});
+        }
+      })
+    })
+  </script>
+</body>
+</html>
